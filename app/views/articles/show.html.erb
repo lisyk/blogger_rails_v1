@@ -7,6 +7,9 @@
 </p>
 
 <p><%= @article.title %></p>
+<p>
+  <%= image_tag @article.image.url(:medium) %>
+</p>
 <p><%= @article.body %></p>
 <p><%= link_to "delete", article_path(@article),
         method: :delete,
